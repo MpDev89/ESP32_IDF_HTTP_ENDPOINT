@@ -65,12 +65,14 @@ idf.py set-target esp32
 ### 3) Configure Wi-Fi + GPIO
 
 Open menuconfig and set:
-`*WIFI CONFIG*`
-`WiFi SSID → your SSID`
-`WiFi Password → your password`
-`WiFi Max Retry → default 5'`
 
-`*GPIO CONFIG*`
+*WIFI CONFIG*
+- `WiFi SSID → your SSID`
+- `WiFi Password → your password`
+- `WiFi Max Retry → default 5'`
+
+*GPIO CONFIG*
+
 `Output GPIO number → default 18 (change to your LED pin if needed)`
 
 ### 4) Build, Flash, Monitor
@@ -132,14 +134,13 @@ Fields:
 
 ## 🛠️ Troubleshooting
 **I can’t reach the endpoint**
-Ensure PC and ESP32 are on the same network.
-Verify the ESP32 IP address from monitor output.
+- Ensure PC and ESP32 are on the same network.
+- Verify the ESP32 IP address from monitor output.
 
 Try:
 ```bash
 ping <ESP_IP>
 ```
-
 Check that your router/client isolation is disabled (guest networks may block LAN devices)
 
 
