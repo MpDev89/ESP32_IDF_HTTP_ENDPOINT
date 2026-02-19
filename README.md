@@ -88,9 +88,8 @@ http://<ESP_IP>/api/led
 ```
 
 The endpoint supports query parameters:
-
-state → logical state (on/off/true/false/1/0)
-level → raw level (0/1)
+- state → logical state (on/off/true/false/1/0)
+- level → raw level (0/1)
 
 ✅ Examples
 
@@ -117,10 +116,9 @@ curl "http://<ESP_IP>/api/led?level=0"
 ```
 
 Fields:
-
-ok: request processed
-led: logical LED state (true = ON)
-gpio_level: the level used by the handler (0/1)
+- ok: request processed
+- led: logical LED state (true = ON)
+- gpio_level: the level used by the handler (0/1)
 
 ## 🗒️ Test and Results
 1. Flash the application
@@ -134,8 +132,9 @@ gpio_level: the level used by the handler (0/1)
 
 ## 🛠️ Troubleshooting
 **I can’t reach the endpoint**
-Ensure PC and ESP32 are on the same network
-Verify the ESP32 IP address from monitor output
+Ensure PC and ESP32 are on the same network.
+Verify the ESP32 IP address from monitor output.
+
 Try:
 ```bash
 ping <ESP_IP>
@@ -145,15 +144,15 @@ Check that your router/client isolation is disabled (guest networks may block LA
 
 
 **Wi-Fi won’t connect**
-Re-check SSID/password in menuconfig
-Ensure the network is 2.4 GHz (many ESP32 setups use 2.4 GHz)
-Increase retries: WIFI_MAX_RETRY
+- Re-check SSID/password in menuconfig
+- Ensure the network is 2.4 GHz (many ESP32 setups use 2.4 GHz)
+- Increase retries: WIFI_MAX_RETRY
 
 
 **LED doesn’t toggle**
-Verify the configured GPIO matches your board LED pin
-Try an external LED + resistor on the selected GPIO
-Change GPIO_OUT_PIN in menuconfig
+- Verify the configured GPIO matches your board LED pin
+- Try an external LED + resistor on the selected GPIO
+- Change GPIO_OUT_PIN in menuconfig
 
 ## 🗒️ Licensing
 This project includes original code from Melexis N.V. under the Apache 2.0 License. See the LICENSE file for details.
