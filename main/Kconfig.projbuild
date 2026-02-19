@@ -2,13 +2,13 @@ menu "WIFI CONFIG"
 
     config WIFI_SSID
         string "WiFi SSID"
-        default "TIM-13042075"
+        default "your_wifi_ssid"
         help
             SSID of WiFi access point to connect to.
 
     config WIFI_PASS
         string "WiFi Password"
-        default "MV_Torino_01Nov20!()_5.02.4"
+        default "your_wifi_password"
         help
             Password of WiFi access point to connect to.
 
