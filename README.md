@@ -36,6 +36,7 @@ Hardware:
 ---
 
 ## 🏗️ Project Structure
+```text
 ESP32_IDF_HTTP_ENDPOINT/
 ├─ main/
 │ ├─ main.c # app entry + endpoint /api/led
@@ -47,6 +48,7 @@ ESP32_IDF_HTTP_ENDPOINT/
 ├─ sdkconfig # current build config (can be customized)
 ├─ .devcontainer/ # optional containerized environment
 └─ .vscode/ # optional VS Code settings
+```
 
 ## ⚙️ Quick Start (Clone → Build → Flash)
 
@@ -63,13 +65,13 @@ idf.py set-target esp32
 ### 3) Configure Wi-Fi + GPIO
 
 Open menuconfig and set:
-WIFI CONFIG
-WiFi SSID → your SSID
-WiFi Password → your password
-WiFi Max Retry → default 5
+`*WIFI CONFIG*`
+`WiFi SSID → your SSID`
+`WiFi Password → your password`
+`WiFi Max Retry → default 5'`
 
-GPIO CONFIG
-Output GPIO number → default 18 (change to your LED pin if needed)
+`*GPIO CONFIG*`
+`Output GPIO number → default 18 (change to your LED pin if needed)`
 
 ### 4) Build, Flash, Monitor
 ```bash
@@ -85,6 +87,7 @@ Base URL:
 http://<ESP_IP>/api/led
 ```
 
+```text
 The endpoint supports query parameters:
 state → logical state (on/off/true/false/1/0)
 level → raw level (0/1)
@@ -93,22 +96,32 @@ level → raw level (0/1)
 You can use curl or set http command in your browser.
 
 Remove curl and past and copy in your browser
+```
 
-Turn LED ON (logical)
+*Turn LED ON (logical)*
+```bash
 curl "http://<ESP_IP>/api/led?state=on"
-Turn LED OFF (logical)
+```
+*Turn LED OFF (logical)*
+```bash
 curl "http://<ESP_IP>/api/led?state=off"
-Set raw GPIO level
+```
+*Set raw GPIO level*
+```bash
 curl "http://<ESP_IP>/api/led?level=1"
 curl "http://<ESP_IP>/api/led?level=0"
+```
 
-Response (JSON)
+*Response (JSON)*
+```bash
 {"ok":true,"led":true,"gpio_level":1}
-
+```
+```text
 Fields:
 ok: request processed
 led: logical LED state (true = ON)
 gpio_level: the level used by the handler (0/1)
+```
 
 ## 🗒️ Test and Results
 1. Flash the application
@@ -128,6 +141,8 @@ Try:
 ```bash
 ping <ESP_IP>
 ```
+
+```text
 Check that your router/client isolation is disabled (guest networks may block LAN devices)
 
 **Wi-Fi won’t connect**
@@ -139,6 +154,7 @@ Increase retries: WIFI_MAX_RETRY
 Verify the configured GPIO matches your board LED pin
 Try an external LED + resistor on the selected GPIO
 Change GPIO_OUT_PIN in menuconfig
+```
 
 ## 🗒️ Licensing
 This project includes original code from Melexis N.V. under the Apache 2.0 License. See the LICENSE file for details.
