@@ -1,0 +1,29 @@
+menu "WIFI CONFIG"
+
+    config WIFI_SSID
+        string "WiFi SSID"
+        default "TIM-13042075"
+        help
+            SSID of WiFi access point to connect to.
+
+    config WIFI_PASS
+        string "WiFi Password"
+        default "MV_Torino_01Nov20!()_5.02.4"
+        help
+            Password of WiFi access point to connect to.
+
+    config WIFI_MAX_RETRY
+        int "WiFi Max Retry"
+        default 5
+        help
+            Number of times to retry connecting to WiFi before giving up.
+endmenu
+
+menu "GPIO CONFIG"
+
+    config GPIO_OUT_PIN
+        int "Output GPIO number"
+        default 18
+        range 0 39
+
+endmenu
