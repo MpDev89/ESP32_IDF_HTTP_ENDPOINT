@@ -6,10 +6,12 @@
 
 ## ✅ Free firmware release checklist (PDF)
 Get my ESP-IDF firmware release checklist  — via email:
+
 **Download here:** https://mpdev89.gumroad.com/l/esp32-http-checklist
 
 ## 🚀 Pro Starter Kit (HTTP + OTA)
 Want the production-ready version (OTA pack + docs + configuration)?
+
 **Get the Pro kit:** https://mpdev89.gumroad.com/l/esp-idf-starter-pro
 
 ---
