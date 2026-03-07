@@ -4,6 +4,16 @@
 
 ---
 
+## ✅ Free firmware release checklist (PDF)
+Get my ESP-IDF firmware release checklist  — via email:
+**Download here:** https://mpdev89.gumroad.com/l/esp32-http-checklist
+
+## 🚀 Pro Starter Kit (HTTP + OTA)
+Want the production-ready version (OTA pack + docs + configuration)?
+**Get the Pro kit:** https://mpdev89.gumroad.com/l/esp-idf-starter-pro
+
+---
+
 ## 🚀 Features
 - ✅ Wi-Fi STA connection (SSID/PW configurable via `menuconfig`)
 - ✅ Minimal HTTP server (ESP-IDF `httpd`)
@@ -157,9 +167,7 @@ Check that your router/client isolation is disabled (guest networks may block LA
 
 ## 🗒️ Licensing
 This project is under Apache 2.0 License. See the LICENSE file for details.
-Additional functionality was added by Marconatale Parise in June 2025, including:
-- Data structure to extrapolate sensor data. 
-- Function to improve the code readability and for debug
+Additional functionality was added by Marconatale Parise in June 2025 to improve the code readability and for debug.
 
 Custom code for variables and constant are marked with:
 ```c
@@ -168,7 +176,7 @@ Custom code for variables and constant are marked with:
 
 Custom code for function are marked specifying the author (@author Marconatale Parise) in the description.
 
-## 🌐 Contatti
+## 🌐 Contacts
 [![Email](https://img.shields.io/badge/mail-marconatale%20parise-blue)](mailto:marconatale.parise@gmail.com)  
 [![LinkedIn](https://img.shields.io/badge/Linkedin-marconatale%20parise-blue)](https://www.linkedin.com/in/marconatale-parise-48a07b94)  
 [![GitHub](https://img.shields.io/badge/Account-Github-black)](https://github.com/MpDev89)
